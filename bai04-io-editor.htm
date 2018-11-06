@@ -1,0 +1,2109 @@
+
+<!-- saved from url=(0063)https://uet.vnu.edu.vn/~thanhld/lects/netos/bai04-io-editor.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 12">
+<meta name="Originator" content="Microsoft Word 12">
+<link rel="File-List" href="https://uet.vnu.edu.vn/~thanhld/lects/netos/bai04-io-editor_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>thanh</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>thanh</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2017-02-15T03:21:00Z</o:Created>
+  <o:LastSaved>2017-02-15T03:21:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>1242</o:Words>
+  <o:Characters>7081</o:Characters>
+  <o:Company>Hudevelop</o:Company>
+  <o:Lines>59</o:Lines>
+  <o:Paragraphs>16</o:Paragraphs>
+  <o:CharactersWithSpaces>8307</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel="themeData" href="https://uet.vnu.edu.vn/~thanhld/lects/netos/bai04-io-editor_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="https://uet.vnu.edu.vn/~thanhld/lects/netos/bai04-io-editor_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DefaultTableStyle Number="0">Normal</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870265 1073741843 0 0 415 0;}
+@font-face
+	{font-family:FreeSans;
+	mso-font-alt:Arial;
+	mso-font-charset:1;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:0in;
+	line-height:120%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l1 level1 lfo2;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:16.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	mso-font-kerning:0pt;
+	mso-fareast-language:ZH-CN;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:0in;
+	line-height:120%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l1 level2 lfo2;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:15.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	mso-fareast-language:ZH-CN;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:22.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:0in;
+	line-height:120%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l1 level3 lfo2;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	mso-fareast-language:ZH-CN;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l2 level1 lfo3;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:13.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	mso-fareast-language:ZH-CN;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;
+	mso-bidi-font-style:italic;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:34.0pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:FreeSans;
+	mso-fareast-language:ZH-CN;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-unhide:no;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:FreeSans;
+	mso-fareast-language:ZH-CN;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Document Map Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+span.WW8Num1z0
+	{mso-style-name:WW8Num1z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num1z1
+	{mso-style-name:WW8Num1z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num1z2
+	{mso-style-name:WW8Num1z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num1z3
+	{mso-style-name:WW8Num1z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num2z0
+	{mso-style-name:WW8Num2z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z1
+	{mso-style-name:WW8Num2z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z2
+	{mso-style-name:WW8Num2z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z3
+	{mso-style-name:WW8Num2z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z4
+	{mso-style-name:WW8Num2z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z5
+	{mso-style-name:WW8Num2z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z6
+	{mso-style-name:WW8Num2z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z7
+	{mso-style-name:WW8Num2z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z8
+	{mso-style-name:WW8Num2z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z0
+	{mso-style-name:WW8Num3z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num3z1
+	{mso-style-name:WW8Num3z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num3z2
+	{mso-style-name:WW8Num3z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num3z3
+	{mso-style-name:WW8Num3z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num4z0
+	{mso-style-name:WW8Num4z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num4z1
+	{mso-style-name:WW8Num4z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num4z2
+	{mso-style-name:WW8Num4z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num4z3
+	{mso-style-name:WW8Num4z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num5z0
+	{mso-style-name:WW8Num5z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z1
+	{mso-style-name:WW8Num5z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z2
+	{mso-style-name:WW8Num5z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z3
+	{mso-style-name:WW8Num5z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z4
+	{mso-style-name:WW8Num5z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z5
+	{mso-style-name:WW8Num5z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z6
+	{mso-style-name:WW8Num5z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z7
+	{mso-style-name:WW8Num5z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z8
+	{mso-style-name:WW8Num5z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num6z0
+	{mso-style-name:WW8Num6z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num6z1
+	{mso-style-name:WW8Num6z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num6z2
+	{mso-style-name:WW8Num6z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num6z3
+	{mso-style-name:WW8Num6z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num7z0
+	{mso-style-name:WW8Num7z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num7z1
+	{mso-style-name:WW8Num7z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num7z2
+	{mso-style-name:WW8Num7z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num8z0
+	{mso-style-name:WW8Num8z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z1
+	{mso-style-name:WW8Num8z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z2
+	{mso-style-name:WW8Num8z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z3
+	{mso-style-name:WW8Num8z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z4
+	{mso-style-name:WW8Num8z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z5
+	{mso-style-name:WW8Num8z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z6
+	{mso-style-name:WW8Num8z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z7
+	{mso-style-name:WW8Num8z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num8z8
+	{mso-style-name:WW8Num8z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num9z0
+	{mso-style-name:WW8Num9z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num9z1
+	{mso-style-name:WW8Num9z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num9z2
+	{mso-style-name:WW8Num9z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num9z3
+	{mso-style-name:WW8Num9z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num10z0
+	{mso-style-name:WW8Num10z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num10z1
+	{mso-style-name:WW8Num10z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num10z2
+	{mso-style-name:WW8Num10z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num10z3
+	{mso-style-name:WW8Num10z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num11z0
+	{mso-style-name:WW8Num11z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num11z1
+	{mso-style-name:WW8Num11z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num11z2
+	{mso-style-name:WW8Num11z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num11z3
+	{mso-style-name:WW8Num11z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;
+	mso-font-kerning:.5pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.FootnoteCharacters
+	{mso-style-name:"Footnote Characters";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	vertical-align:super;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	mso-bidi-font-weight:bold;
+	mso-bidi-font-style:italic;}
+span.ListParagraphChar
+	{mso-style-name:"List Paragraph Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.MyCodeChar
+	{mso-style-name:"MyCode Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	background:#B8CCE4;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:34.0pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.HeadingCxSpFirst, li.HeadingCxSpFirst, div.HeadingCxSpFirst
+	{mso-style-name:HeadingCxSpFirst;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:34.0pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.HeadingCxSpMiddle, li.HeadingCxSpMiddle, div.HeadingCxSpMiddle
+	{mso-style-name:HeadingCxSpMiddle;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:34.0pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.HeadingCxSpLast, li.HeadingCxSpLast, div.HeadingCxSpLast
+	{mso-style-name:HeadingCxSpLast;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:34.0pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:34.0pt;
+	line-height:120%;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:FreeSans;
+	mso-fareast-language:ZH-CN;}
+p.MyCode, li.MyCode, div.MyCode
+	{mso-style-name:MyCode;
+	mso-style-unhide:no;
+	mso-style-parent:"List Paragraph";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:#B8CCE4;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MyCodeCxSpFirst, li.MyCodeCxSpFirst, div.MyCodeCxSpFirst
+	{mso-style-name:MyCodeCxSpFirst;
+	mso-style-unhide:no;
+	mso-style-parent:"List Paragraph";
+	mso-style-type:export-only;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:#B8CCE4;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MyCodeCxSpMiddle, li.MyCodeCxSpMiddle, div.MyCodeCxSpMiddle
+	{mso-style-name:MyCodeCxSpMiddle;
+	mso-style-unhide:no;
+	mso-style-parent:"List Paragraph";
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:#B8CCE4;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MyCodeCxSpLast, li.MyCodeCxSpLast, div.MyCodeCxSpLast
+	{mso-style-name:MyCodeCxSpLast;
+	mso-style-unhide:no;
+	mso-style-parent:"List Paragraph";
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	background:#B8CCE4;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MyList, li.MyList, div.MyList
+	{mso-style-name:MyList;
+	mso-style-unhide:no;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:53.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-8.5pt;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-list:l3 level1 lfo4;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:14.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-language:ZH-CN;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Document Map";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:ZH-CN;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 56.7pt 56.7pt 70.9pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;}
+@list l0:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level2
+	{mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:11.35pt;
+	text-indent:0in;}
+@list l0:level3
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:22.7pt;
+	text-indent:0in;}
+@list l0:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:2;
+	mso-list-template-ids:2;
+	mso-list-name:WW8Num2;}
+@list l1:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1:level2
+	{mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:11.35pt;
+	text-indent:0in;}
+@list l1:level3
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:22.7pt;
+	text-indent:0in;}
+@list l1:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:3;
+	mso-list-type:simple;
+	mso-list-template-ids:3;
+	mso-list-name:WW8Num7;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-suffix:space;
+	mso-level-text:;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:34.0pt;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l3
+	{mso-list-id:4;
+	mso-list-type:simple;
+	mso-list-template-ids:4;
+	mso-list-name:WW8Num10;}
+@list l3:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-suffix:space;
+	mso-level-text:+;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:53.85pt;
+	text-indent:-8.5pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="tab-interval:.5in">
+
+<div class="Section1">
+
+<h1 align="center" style="text-align:center;mso-list:none;tab-stops:.5in"><span style="mso-bidi-font-size:16.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+4. Công cụ soạn thảo <span style="mso-spacerun:yes">&nbsp;</span>&amp; <span style="mso-spacerun:yes">&nbsp;</span>Chuyển hướng vào/ra<o:p></o:p></span></h1>
+
+<h2 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">1. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">gedit<o:p></o:p></span></h2>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Là phần mềm soạn thảo
+văn bản tương tự notepad trong MS Windows, tuy nhiên hơn thế nữa, gedit hiện tại
+có thể hiểu được cú pháp của khá nhiều loại file khác nhau nên người dùng có
+thêm chức năng highlight mà notepad không có.<o:p></o:p></span></p>
+
+<h2 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">2. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">nano<o:p></o:p></span></h2>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Là phần mềm soạn thảo
+văn bản trong môi trường text phổ biến trong nhiều distro linux khác nhau. nano
+được cài đặt rộng rãi vì sự nhỏ gọn, dễ sử dụng. Tất cả các menu lệnh, hỏi đáp
+với người dùng được thể hiện tại hai dòng cuối cùng của cửa sổ lệnh. Người dùng
+chỉ cần hiểu ^X tương đương với nhấn Ctrl và X là có thể thao tác dễ dàng với
+nano.<o:p></o:p></span></p>
+
+<h2 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">3. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">vi<o:p></o:p></span></h2>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Phần mềm soạn thảo
+văn bản nổi tiếng nhất trong môi trường …ix. Rất mạnh và cũng rất … khó điều
+khiển tuy nhiên 100% những người dùng Linux chuyên nghiệp đều thành thạo vi.
+Trong các distro CentOS 6.x, vi có hai phiên bản vim-minimal có các tính năng
+cơ bản và vim-enhanced với các tính năng nâng cao. Theo mặc định, để sử dụng bản
+minimal người dùng cần chạy lệnh vi và để sử dụng bản enhanced cần chạy lệnh
+vim. Tuy nhiên trong phòng thực hành, người dùng root tại các máy ảo đã được
+thiết lập sẵn một </span><span class="MyCodeChar"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>alias vi=vim </span></span><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>để luôn sử dụng vim-enhanced bằng lệnh vi.<o:p></o:p></span></p>
+
+<h3 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">a. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Các chế độ hoạt động<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">vi có nhiều chế độ hoạt
+động khác nhau, tuy nhiên tài liệu này chỉ giới thiệu hai chế độ hoạt động cơ bản
+nhất:<o:p></o:p></span></p>
+
+<h4 style="margin-left:.25in;text-indent:-.25in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chế
+độ lệnh<o:p></o:p></span></h4>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Là chế độ mặc định
+khi bắt đầu khởi động vi. Trong chế độ này, người sử dụng ra các lệnh điều khiển
+và vi thực hiện theo. Người dùng có thể thay đổi nội dung văn bản cần soạn thảo
+nhưng không thể dễ dàng nhập nội dung mới như trong các trình soạn thảo văn bản
+khác.<o:p></o:p></span></p>
+
+<h4 style="margin-left:.25in;text-indent:-.25in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chế
+độ soạn thảo<o:p></o:p></span></h4>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Biểu hiện bằng đoạn
+ký tự </span><span class="MyCodeChar"><span style="font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>--INSERT-- </span></span><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>tại góc dưới bên trái màn hình. Trong chế độ
+này, bàn phím được sử dụng để nhập văn bản như các trình soạn thảo văn bản
+thông dụng<span style="mso-spacerun:yes">&nbsp; </span>khác. <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Để chuyển sang chế độ này từ chế độ lệnh gõ phím </span><span class="MyCodeChar"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>i </span></span><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Để quay về chế độ lệnh gõ phím </span><span class="MyCodeChar"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>Esc </span></span><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>trên bàn phím.<o:p></o:p></span></p>
+
+<h3 style="text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">b. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Di chuyển, tìm kiếm
+trong vi<o:p></o:p></span></h3>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Cách thức di chuyển, tìm kiếm trong chế độ lệnh của
+vi giống như trong môi trường man. <o:p></o:p></span></p>
+
+<h3 style="text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">c. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Sử dụng trợ giúp
+trong vi<o:p></o:p></span></h3>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Tại chế độ lệnh, gõ lệnh :help và nhấn Enter.
+Trong màn hình trợ giúp, các chỉ mục thường được đặt giữa các ký tự | và có màu
+xanh ví dụ </span><span class="MyCodeChar"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>|tutor| </span></span><span style="font-size:
+12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>để theo dõi các chỉ mục này, di chuyển dấu nhắc
+vào chỉ mục, nhấn Ctrl+], nếu muốn BACK lại thì nhấn Ctrl+T hoặc Ctrl+O. Nói
+chung di chuyển trong tài liệu trợ giúp của vi giống như đang duyệt web.<o:p></o:p></span></p>
+
+<h3 style="text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">d. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Một số lệnh cơ bản
+trong chế độ lệnh<o:p></o:p></span></h3>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:q<span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Thoát<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:q!<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Thoát
+và không ghi thay đổi<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:w<span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ghi
+thay đổi<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:wq<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ghi
+thay đổi và thoát<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:x<span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Giống
+:wq<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:x!<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Nhất
+định ghi thay đổi và thoát nếu có quyền<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">dd<span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Xóa
+dòng đang đứng<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:saveas &lt;tên file&gt;<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ghi thành file có tên khác<o:p></o:p></span></p>
+
+<p class="MyList"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:
+120%;mso-fareast-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">+
+</span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">:open &lt;tên file&gt;<span style="mso-tab-count:1">&nbsp;&nbsp; </span>Mở một file<o:p></o:p></span></p>
+
+<h2 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">4. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">mcedit<o:p></o:p></span></h2>
+
+<p class="MsoNormal" style="text-indent:0in"><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Là một phần của bộ
+công cụ nổi tiếng mc (Midnight Commander). mcedit cho phép làm việc khá tốt với
+nhiều loại file. Với hệ thống menu giao diện mạnh, mcedit rất thuận tiện trong
+soạn thảo và đặc biệt mạnh khi làm việc với khối.<o:p></o:p></span></p>
+
+<h1 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">II. </span></span><!--[endif]--><span style="font-size:
+12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chuyển hướng
+kết xuất<o:p></o:p></span></h1>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Mặc định mỗi tiến trình trong Linux khi được nạp
+vào bộ nhớ đều được HĐH cấp phát cho ba kênh nhập-xuất dữ liệu chuẩn để có thể
+làm việc mà không cần quan tâm đến nhập-xuất dữ liệu. Kênh nhập chuẩn là bàn
+phím và kênh xuất chuẩn là màn hình. Việc chuyển kênh mặc định được thực hiện bởi
+các ký hiệu chuyển kênh nêu dưới đây. Nếu có nhiều yêu cầu chuyển kênh trong một
+lần gọi, HĐH sẽ chuyển kênh theo thứ tự ưu tiên từ phải sang trái của dòng lệnh.<o:p></o:p></span></p>
+
+<h2 style="text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">1. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">stdin<o:p></o:p></span></h2>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">0&lt;<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>hoặc
+viết tắt là<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stdin mặc định của tiến
+trình là bàn phím thành file được chỉ định.<o:p></o:p></span></p>
+
+<h2 style="text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">2. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">stdout<o:p></o:p></span></h2>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">1&gt;<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>hoặc
+viết tắt là<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&gt;<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stdout mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có sẽ bị xóa hết nội
+dung trước khi nhận output của tiến trình.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">1&gt;&gt;<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>hoặc
+viết tắt là<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&gt;&gt;<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stdout mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có nội dung sẽ ghi
+output của tiến trình vào sau nội dung cũ đã có.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">|<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stdout mặc định của tiến
+trình là màn hình thành stdin của tiến trình được chỉ định sau ký hiệu chuyển
+hướng này. Cơ chế chuyển hướng này còn gọi là cơ chế nối dòng, là linh hồn của
+các shell script sử dụng trong quản lý hệ thống.<o:p></o:p></span></p>
+
+<h2 style="text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">3. </span></span><!--[endif]--><span style="font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">stderr<o:p></o:p></span></h2>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">2&gt;<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stderr mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có sẽ bị xóa hết nội
+dung trước khi nhận warning hoặc error của tiến trình.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">2&gt;&gt;<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stderr mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có nội dung sẽ ghi
+warning hoặc error của tiến trình vào sau nội dung cũ đã có.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">2&gt;&amp;1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Được sử dụng để thay đổi stderr mặc định của tiến
+trình là màn hình thành stdout.<o:p></o:p></span></p>
+
+<h1 style="margin-left:0in;text-indent:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Palatino Linotype&quot;;mso-bidi-font-family:&quot;Palatino Linotype&quot;"><span style="mso-list:Ignore">III. </span></span><!--[endif]--><span style="font-size:
+12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Thực hành<o:p></o:p></span></h1>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+1: Thực hành nano<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Tạo file /tmp/diem.txt có tối thiểu 20 với các yêu
+cầu sau<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">+ Mỗi dòng có 5 trường thể hiện các nội dung về
+(Tên, Giới tính, Điểm 1, Điểm 2, Điểm Tổng)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">+ Tổng = Điểm 1 + Điểm 2 (các giá trị này là
+nguyên dương)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">+ Tên không giống nhau với mỗi dòng và không bao gồm
+dấu cách. Lưu ý, Tên chứ không phải Họ và Tên<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">+ Mỗi trường cách nhau bằng đúng một dấu cách, mỗi
+dòng có đúng 4 dấu cách<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">+ Giới tính có hai loại là nam và nữ<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">+ Tất cả các ký tự trong file đều là chữ thường,
+không có dấu.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Copy file /root/install.log thành file
+/tmp/nano.txt<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Sử dụng lệnh nano thực hiện 1 số thao tác soạn thảo
+file trên, di chuyển trong nội dung file, ghi file sau khi soạn thảo, sau đó
+ghi thành file mới có tên /tmp/vi.txt<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+2: Thực hành vi<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chạy lệnh vi, sau đó mở file /tmp/vi.txt của bài
+trước.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Di chuyển đến đầu/cuối file, sau đó di chuyển đến
+dòng thứ 234 tính từ đầu file, rồi tiếp tục di chuyển đến dòng có vị trí khoảng
+70%.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Tìm từ “lib” đầu tiên trong file, sau đó tìm lên
+trên 3 từ rồi tìm ngược lại 1 từ. Thay thế tất cả các từ “rpm” thành RPM.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Ghi file đang soạn thảo thành file /tmp/mcedit.txt<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+3: Thực hành mcedit<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chạy lệnh mcedit /tmp/mcedit.txt để mở file đã tạo
+trước đó. Thực hiện đánh dấu 1 khối từ dòng 30 đến dòng 35. Copy khối 3 lần tại
+chỗ sau đó di chuyển tới dòng cuối cung và di chuyển khối đang đánh dấu đến đó.
+Hủy đánh dấu khối. Ghi lại file thành /tmp/end.txt<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+4: Thực hành chuyển hướng kết xuất (1)<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chạy lệnh sau </span><span class="MyCodeChar"><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>cat &gt; /tmp/new.txt </span></span><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>gõ một số đoạn ký tự có xuống dòng rồi nhấn
+Ctrl+D để kết thúc nhập. Giải thích các thao tác trên<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Tạo file sum.sh có nội dung như sau:<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpFirst"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">echo –n “Nhap A: ”;
+read A</span><span style="mso-bidi-font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">echo –n “Nhap B: ”;
+read B</span><span style="mso-bidi-font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">echo “A + B = $(($A +
+$B))<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpLast"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Sau đó thực hiện các lệnh sau để chạy file mới tạo<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpFirst"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">chmod a+x sum.sh</span><span style="mso-bidi-font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">./sum.sh<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpLast"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Nhập A, B bằng bàn phím để tính A + B. Sau đó tạo
+file input.txt có nội dung như sau (lưu ý có 3 dòng, dòng thứ 3 trống)<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpFirst"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">16</span><span style="mso-bidi-font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">27<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpLast"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Sau đó chạy lệnh sau để kiểm tra chuyển hướng đầu
+vào (stdin)<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpFirst"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">./sum.sh &lt;
+input.txt<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpLast"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+5: Thực hành chuyển hướng kết xuất (2)<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Chạy lệnh sau để đảm bảo không có file </span><span class="MyCodeChar"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>nofile rm
+–f nofile </span></span><span style="font-size:12.0pt;line-height:120%;
+font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>sau đó lần lượt chạy các lệnh sau<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpFirst"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">cat nofile &gt;
+output.txt 2&gt;&amp;1</span><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MyCodeCxSpMiddle"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span></span><span style="mso-bidi-font-size:12.0pt;
+line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">cat nofile
+2&gt;&amp;1 &gt; output.txt<o:p></o:p></span></p>
+
+<p class="MyCodeCxSpLast"><span style="mso-bidi-font-size:12.0pt;line-height:
+120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Hãy giải thích các hiện tượng diễn ra trên màn
+hình và nội dung file output.txt<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+6: Thực hành chuyển hướng kết xuất (3)<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Sử dụng lệnh </span><span class="MyCodeChar"><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>adduser test </span></span><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>để tạo người dùng test, hãy kết hợp hai lệnh
+echo và passwd để thay đổi mật khẩu của người dùng này chỉ cần 1 lần nhấn Enter<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Biết A là biến chứa một số nguyên dương. Hãy kết hợp
+giữa hai lệnh head và tail để hiện thị dòng thứ A trong file /var/log/messages
+(không cần kiểm tra A có lớn hơn số dòng trong file không)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Hãy hiển thị tất cả các dòng không có từ nologin
+trong /etc/passwd<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+7: Thực hành chuyển hướng kết xuất (4)<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Hiển thị danh sách trong file /tmp/diem.txt theo
+thứ tự tăng dần của Tên<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Hiển thị danh sách trên theo tứ tự tăng dần của Tổng
+điểm<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Đếm số bạn nam, nữ trong file<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Tạo thêm file /tmp/ds.txt có hai trường Tên, Ngày
+sinh có số dòng và Tên như trong file /tmp/diem.txt. Hãy tạo file /tmp/full.txt
+chứa nội dung hai file trước nhưng cột Ngày sinh nằm sau cột Giới tính<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+8: Thực hành chuyển hướng kết xuất (5)<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Sử dụng lệnh sed để thay đổi các từ Install trong
+file /tmp/mcedit.txt thành INSTALL<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Tạo file /tmp/backup là nội dung file /etc/passwd
+nhưng tất cả các chữ thường đã được chuyển thành chữ hoa.<o:p></o:p></span></p>
+
+<h4 style="margin-left:0in"><!--[if !supportLists]--><span style="font-size:12.0pt;
+line-height:120%;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">· </span></span><!--[endif]--><span style="font-size:12.0pt;line-height:120%;font-family:&quot;Palatino Linotype&quot;,&quot;serif&quot;">Bài
+9: Thực hành chuyển hướng kết xuất (6)<o:p></o:p></span></h4>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Biết lệnh ps sẽ hiển thị các tiến trình trong bộ
+nhớ, hãy hiển thị một danh sách 10 tiến trình chiếm nhiều CPU nhất theo dạng 2
+cột (PID, %CPU) và sắp xếp theo thứ tự giảm dần của CPU.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:120%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;">Thực hiện như trên nhưng thay tỷ lệ dùng CPU thành
+tỷ lệ dùng RAM<o:p></o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>
