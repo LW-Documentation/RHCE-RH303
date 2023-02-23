@@ -3,4 +3,4 @@
 - Lưu trữ tài liệu môn thực hành hđh mạng (Redhat Linux).
 - Cần dựng trang Github hay trang tĩnh (ie. S3) cho phần html.
 - Còn nhiều bài hay của TS LĐ Thanh để nghiên cứu.
-- Thời K53 nhờ thày Phương ĐM mà trình Linux bá cháy :).
+- Khóa K53 nhờ thày Phương ĐM mà sv học nhiều về Linux.
